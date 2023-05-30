@@ -1,13 +1,20 @@
-import  Button from 'react-bootstrap/Button';
-import NavProjeto from './components/NavProjeto';
-import Carrossel from './components/Carrossel';
+import Sobre from "./pages/Sobre";
+import Contato from "./pages/Contato";
+import Home from "./pages/Home";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import './App.css';
+
 function App() {
 
   return (
     <div>
-      <NavProjeto/>
-      <h2>Exemplo</h2>
-      <Button variant="outline-secondary" size="lg"> BOTÃO </Button>{' '}
+      <BrowserRouter>
+ <Routes>
+ <Route path="/" element={<Home/>}/>
+ <Route path="/Sobre" element={<Sobre/>}/>
+ <Route path="/Contato" element={<Contato/>}/>
+ </Routes>
+ </BrowserRouter>
     </div>
   )
 }

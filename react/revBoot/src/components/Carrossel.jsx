@@ -1,47 +1,51 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-function Carousel() {
-  return (
-    <Carousel>
+function Carrossel() {
+  return ( 
+    <Carousel variant="dark">
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          width={100}
+          height={900}
+          src="https://images.samsung.com/in/smartphones/galaxy-z-flip3-5g/images/galaxy-z-flip3-5g_highlights_kv.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1>Z Flip 3</h1>
+          <h3>Adquira o seu incrível e inovador celular dobrável! </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          width={100}
+          height={900}
+          src="https://www.pakmobizone.pk/wp-content/uploads/2022/05/Samsung-Galaxy-Z-Fold-4-1.jpg"
           alt="Second slide"
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1>Z Fold4 5G</h1>
+          <h3>Quer um smartphone com a estética diferente e sofisticada?</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          width={100}
+          height={900}
+          src="https://image-us.samsung.com/us/smartphones/galaxy-s23/configurator/D3-Exclusive-Configurator-DT-800x600.jpg?$product-details-jpg$"
           alt="Third slide"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h1>Galaxy S23</h1>
+          <h3>Conheça a magia dos telefones S23!</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 }
 
-export default function Carousel;
+export default Carrossel;
